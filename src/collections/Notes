@@ -1,0 +1,66 @@
+
+                        Iterable
+                            |
+                       Collection
+                --------------------------------
+                |              |              |
+               List            Set           Queue
+                |              |              |
+           ArrayList        HashSet       PriorityQueue
+           LinkedList       LinkedHashSet ArrayDeque
+           Vector           TreeSet
+
+                        Map  (separate)
+                --------------------------------
+                HashMap   LinkedHashMap   TreeMap   Hashtable
+
+
+---------------------------------------------------------------------------
+                    List vs Set vs Map
+
+        | Feature    | List        | Set         | Map              |
+        | ---------- | ----------- | ----------- | ---------------- |
+        | Duplicates | Allowed     | Not Allowed | Keys not allowed |
+        | Order      | Preserved   | Mostly no   | Depends          |
+        | Access     | Index-based | No index    | Key-based        |
+        | Example    | ArrayList   | HashSet     | HashMap          |
+
+__________________________________________________________________________________
+
+             3   ArrayList vs LinkedList
+
+         | Feature       | ArrayList     | LinkedList             |
+         | ------------- | ------------- | ---------------------- |
+         | Structure     | Dynamic Array | Doubly Linked List     |
+         | Access        | Fast (O(1))   | Slow (O(n))            |
+         | Insert/Delete | Slow          | Fast                   |
+         | Memory        | Less          | More                   |
+         | Use case      | Searching     | Frequent insert/delete |
+
+------------------------------------------------------------------------------------------
+        4️⃣ HashSet vs TreeSet vs LinkedHashSet
+
+        | Feature     | HashSet     | TreeSet     | LinkedHashSet |
+        | ----------- | ----------- | ----------- | ------------- |
+        | Order       | No          | Sorted      | Insertion     |
+        | Performance | Fast        | Slower      | Medium        |
+        | Null        | One allowed | Not allowed | One allowed   |
+
+--------------------------------------------------------------------------------------------------
+        5️⃣ HashMap vs TreeMap vs LinkedHashMap
+
+        | Feature     | HashMap     | TreeMap       | LinkedHashMap |
+        | ----------- | ----------- | ------------- | ------------- |
+        | Order       | No          | Sorted by key | Insertion     |
+        | Null key    | One         | Not allowed   | One           |
+        | Performance | Fast        | Slower        | Medium        |
+        | Use case    | General use | Sorted data   | Ordered data  |
+
+-------------------------------------------------------------------------------------------------
+        6️⃣ Queue vs PriorityQueue
+
+        | Feature  | Queue       | PriorityQueue            |
+        | -------- | ----------- | ------------------------ |
+        | Order    | FIFO        | Priority-based           |
+        | Null     | Not allowed | Not allowed              |
+        | Use case | Scheduling  | Dijkstra, CPU scheduling |

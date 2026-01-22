@@ -1,0 +1,20 @@
+
+Stream -> The contineous flow. read and write.
+
+Buffer Stream--> Buffer is a mermory.
+Buffer Streams are exactly same as Byte Stream and Character Streams with more efficiency.
+
+syntax:
+1) BufferedInputStream bis=new BufferedInputStream(new FileInputStream("path"));
+
+2)        BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream(""));
+
+3)      BufferedReader br=new BufferedReader(new FileReader(""));
+4)        BufferedWriter bw=new BufferedWriter(new FileWriter(""));
+
+
+
+in DataSTream which order you are writing the data in that order only you have to retrived the data. (100 % order followed.)
+
+we can write that object into a file and i can send it to you.
+it is a process of converting class obj into network supported format or file supported format.

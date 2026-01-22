@@ -1,0 +1,28 @@
+
+- Polymorphism
+    - one function with different behaviours is called polymorphism.
+    - the ability of msg will be display in more than one format.
+
+    * There are two types of polymorphism is java.
+        1) compile Time polymorphism.
+            - method overloading.
+        2) Run time polymorphism.
+            - methos overriding.
+
+        - compile Time polymorphism :- The bind between method calling stmts and the implimaintation of
+                                        overloaded methods occures during in the compilation is known as compile time poly.
+
+        - Methid overloading
+         - Method Overloading - Same method name with different formal arguments.
+         - we can create a no of methods in a class.
+         - method overloading is a example of compile time polymorphism.
+         - Method overloading just check the method signature and overload method have a diffe return type.
+
+        - Run time polymorphism :- The bind between method calling stmts and implimentation of overloaded
+                                    overloaded methods occures during in the runtimr is known as Runtime polymorphism.
+
+         - Method Overriding -
+
+
+
+
