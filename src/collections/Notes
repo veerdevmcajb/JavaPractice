@@ -49,10 +49,10 @@ ________________________________________________________________________________
 --------------------------------------------------------------------------------------------------
         5️⃣ HashMap vs TreeMap vs LinkedHashMap
 
-        | Feature     | HashMap     | TreeMap       | LinkedHashMap |
-        | ----------- | ----------- | ------------- | ------------- |
-        | Order       | No          | Sorted by key | Insertion     |
-        | Null key    | One         | Not allowed   | One           |
+        | Feature     | HashMap     | TreeMap       | LinkedHashMap | LinkedHashMap |
+        | ----------- | ----------- | ------------- | ------------- | -------------
+        | Order       | No          | Sorted by key | Insertion     |  NOt Maintained
+        | Null key    | One         | Not allowed   | One           |  Not allowed
         | Performance | Fast        | Slower        | Medium        |
         | Use case    | General use | Sorted data   | Ordered data  |
 
