@@ -1,5 +1,9 @@
 package multiThreading;
 
+// process of executing multiple threads simultaneously within a single program.
+//A thread is the smallest unit of execution in a program,
+// and multithreading allows multiple threads to share the same memory
+
 public class A extends Thread{
     public void run(){
         for(int i=1;i<=3;i++){
