@@ -8,7 +8,7 @@ public class SynchronizedMethod extends Thread{
 
    synchronized void criticalResource(){
         String name=Thread.currentThread().getName();
-        System.out.println(name + "has entered the method");
+        System.out.println(name + " has entered the method");
         for(int i=1;i<=5;i++){
             System.out.println(name + " is executing "+i);
         }
