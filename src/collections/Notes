@@ -64,3 +64,50 @@ ________________________________________________________________________________
         | Order    | FIFO        | Priority-based           |
         | Null     | Not allowed | Not allowed              |
         | Use case | Scheduling  | Dijkstra, CPU scheduling |
+
+
+   * Collections
+   - Collections are used to store group of object.
+   - Collections are growable in nature.
+   - We can store any type of data in Collection.(Homogeneous & Heterogeneous data ).
+   - Collections provide pre-define methods to insert,update,delete,retrieve,sort,etc...
+
+
+
+* Collection is a container which is used to store group of object.
+* Collection interface is available  in java.util package.
+* List,set,Queue interfaces are extending properties of Collection interface.
+
+- Collections is a pre defined class available in java.lang pack.
+- Collections class provided several static methods to perform operations on data.
+    Collections.sort(al);
+    collections.reverse(al);
+
+ Q. diff between Collection , Collections, Collections Frameworks.?
+ ----------------------------------------------------------------------
+ Collection --> Collection is a container which is used to store group of object.
+
+ We have an interface with a name Collection(java.util). it is a root Interface of COllections Frameworks.
+
+ Collection is a class available in java.util package
+ (Providing ready made methods to perform operations.)
+
+ Collection interface & Collections class are part of Collections Frameworks.
+
+
+ // we are sorting the object data. by using Comparable Interface.
+ /*  If we want to apply sorting on user define object like student ,Employee,product etc...
+     then we have two approach
+     1) Comparable (java.lang)
+     2) Comparator (java.util)
+
+     -> Comparable is a predefine interface available in java.lang pack.
+     -> Comparable interface having CompareTo(Object obj)method
+     -> compareTo()method is used to compare an object with itself and return int value.
+     -> comparable interface will allow us to sort the data based on only one value.
+
+     - To overcome this problem we will go for Comparator Interface.
+     - Comparator is a predefine interface available in java.util package.
+     - Comparator interface having compare(Object obj1,Object obj2)
+     -> comparator interface will allow us to sort the data of multiple value.
+

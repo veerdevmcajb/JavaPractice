@@ -1,0 +1,36 @@
+Generics in java
+    - Generics introduced in jva 1.5 version
+    - Generics are used to achieve type safety
+    - Using Generics we can write our classes /var /methods which are independent of data.
+
+   public class Demo {
+       public void m1(Integer i){
+
+       }
+       public static void main(String[] args) {
+           Demo d=new Demo();
+           d.m1(10);
+           //d.m1("Hi"); // not possible
+       }
+   }
+
+    - Above method is taing Integer as a parameter.(tightly coupled).
+        if want to pass String as a parameter it is not possible.
+    - To overcome the above prob we can go for Generics in java.
+    ex.
+    package collections.generics;
+
+    public class ClassA <T>{
+        T obj;
+        public void m1(T arg){
+            System.out.println(arg);
+        }
+
+        public static void main(String[] args) {
+            ClassA c=new ClassA();
+            c.m1(10);
+            c.m1("Hi");
+            c.m1(100.51);
+            c.m1(true);
+        }
+    }
