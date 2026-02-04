@@ -32,6 +32,7 @@ public class ClassA {
         hm.put(105,111);
         System.out.println(hm);
 
+
         //retriving the data from map Implementation classes
         HashSet hs1=new HashSet(hm.keySet());
         System.out.println(hs1); // it will retrive the all keys
@@ -52,3 +53,16 @@ public class ClassA {
         obj.meth1();
     }
 }
+
+/*
+* Map methods
+*   1) put() --> to add the element
+*   2) get()-->
+*   3) remove()
+*   4) containsKey()
+*   5) values()
+*   6) enteries()
+*   7) clear()
+*   8) isEmpty()
+*   9) setKeys()
+* */

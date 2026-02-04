@@ -6,10 +6,11 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 /*  - Uses Balanced Birany Search tree algorithm.
+    - Natural Sorting order.
     - Insertion order in not maintained (Sorting order - ascending order)
-    - It will not allowed Heterogenous Data.
+    - It will not allow Heterogeneous Data. (It will allow only Homogeneous data.)
     - Duplicated are not allowed.
-    - Null is not allowed.
+    - Null is not allowed. -- it will give null pointer exception
     - Default capacity is 16 load factor is 0.75.
     - Treeset is available from java 1.2
     - It is not Synchronized.
