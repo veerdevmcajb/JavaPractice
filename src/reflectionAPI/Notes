@@ -1,0 +1,8 @@
+
+Reflection API
+- using reflection api we can analyze our java classes.
+- Reflection API is used to analyze the Software.
+- To load a class in another class we have to use Class.forName()
+    syntax:
+      Class clz=Class.forName("fullycolifiedclassname");
+      Field[] fields =clz.getDeclaredFields();
