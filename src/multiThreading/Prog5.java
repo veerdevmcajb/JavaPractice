@@ -18,7 +18,7 @@ public class Prog5 extends Thread {
 
     Prog5(int n2,int n){
         for (int i=1;i<=10;i++){
-            System.out.println(n +" *"+ i+" = "+(n2*i));
+            System.out.println(n +" *"+ i+" = "+(n*i));
         }
     }
 }

@@ -32,11 +32,14 @@ class Test3{
         Prog3 p1=new Prog3();
         Thread obj=new Thread(p1);
         obj.start();
-        obj.join();
+        obj.join(); // join() Stops the other thread execution until the current Thread execution is completed.
         Thread obj1=new Thread(p1);
         obj1.start();
+        obj1.join();
         Thread obj2=new Thread(p1);
         obj2.start();
+
+
 //        Prog3 p2=new Prog3();
 //        Prog3 p3=new Prog3();
 //        p1.start();

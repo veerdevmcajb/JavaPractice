@@ -21,7 +21,7 @@ class RunnableDemo{
         Thread tn=new Thread(new UserThread(),"child1");
         tn.start();
 
-        Thread tr=new Thread(new Ravi(),"Ravi");
+        Thread tr=new Thread(new Ravi(),"Ravi"); // we have a ravi class & its implementation.
         tr.start();
 
         Thread ta=new Thread(new Akash(),"Akash");

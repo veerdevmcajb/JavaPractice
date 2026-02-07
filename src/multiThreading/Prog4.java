@@ -11,29 +11,29 @@ package multiThreading;
 //Good Night...Rani
 
 public class Prog4 extends Thread{
-
+    @Override
+    public void run() {
+        for(int i=1;i<=3;i++){
+            System.out.println("Good Morning..."+ Thread.currentThread().getName());
+        }
+    }
 }
 
 class Test4{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Prog4 obj=new Prog4();
+        obj.setName("ratan");
+        obj.start();
+        obj.join();
+        Thread t1=new Thread(obj);
+        t1.setName("Rohit");
+        t1.start();
 
-        Prog4 p1=new Prog4();
-        p1.setName("Ratan");
-        for(int i=1;i<=2;i++){
-            System.out.println("Good Morning..."+p1.getName());
-        }
+        Thread t2=new Thread(obj);
+        t2.setName("Rani");
+        t2.start();
 
-        Prog4 p2=new Prog4();
-        p2.setName("Rohit");
-        for(int i=1;i<=3;i++){
-            System.out.println("Good Evening..."+p2.getName());
-        }
 
-        Prog4 p3=new Prog4();
-        p3.setName("Rani");
-        for(int i=1;i<=3;i++){
-            System.out.println("Good Night..."+p3.getName());
-        }
 
     }
 }
