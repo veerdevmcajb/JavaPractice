@@ -5,7 +5,7 @@ package multiThreading.Synchronization;
 //if multiple Threads can access the same obj at a same time then there is a chance
 // of getting data inconsistency problem.
 // To avoid data inconsistency problem. we need to use Synchronized concept.
-// By using synchronization we cnn achieve Thread safety but it will slow down our execution process.
+// By using synchronization we cnn achieve Thread safety , but it will slow down our execution process.
 
 public class Demo implements Runnable{
 
@@ -13,13 +13,14 @@ public class Demo implements Runnable{
     public synchronized void printNums(){
         for(int i=1;i<=10;i++){
             System.out.println(Thread.currentThread().getName() + " "+ i);
-            try{
-
-            Thread.sleep(1000);
-            }catch (InterruptedException e){
-                e.printStackTrace();
-            }
+//            try{
+//
+//            Thread.sleep(1000);
+//            }catch (InterruptedException e){
+//                e.printStackTrace();
+//            }
         }
+            System.out.println("_____________________________");
     }
 
     public  void run(){

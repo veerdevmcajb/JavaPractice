@@ -7,7 +7,7 @@ package multiThreading;
 public class A extends Thread{
     public void run(){
         for(int i=1;i<=3;i++){
-            System.out.println("Good Morning");
+            System.out.println("Good Morning"+Thread.currentThread().getName());
         }
     }
 }

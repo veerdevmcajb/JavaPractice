@@ -7,7 +7,7 @@ package multiThreading;
     - The Thread which runs in the background is called as Daemon thread. ex.Garbage Collector .
     - Daemon threads are also called as low priority Threads.
     - We can make our thread as Daemon using setDaemon()method
-    - Whwn JVM reaches end of main method it will terminate our prog.
+    - When JVM reaches end of main method it will terminate our prog.
     - if jvm found Daemon Thread running it terminates that daemon Thread
         and shoutdown thr program.
     - JVM will not be care about Daemon Thread .
