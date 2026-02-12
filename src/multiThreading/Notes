@@ -1,2 +1,93 @@
 
 Thread--> Thread is nothing but independent path of execution within a same program .
+
+// process of executing multiple threads simultaneously within a single program.
+//A thread is the smallest unit of execution in a program,
+// and multithreading allows multiple threads to share the same memory
+
+  - we have 3 types of threads in java
+        1) Default Thread created by jvm which is main Thread
+        2) User define Threads (Thread class, Runnable interface, Callable interface)
+        3) Daemon Threads
+
+        / in java whenever execution start from main method, one thread started
+        // automatically is called main thread.
+
+        // -Thread names : Every thread is having name
+        //  - default name of the main Thread is : main
+        //  - default names of user define threads are starts from :- thread-0, thread-1....
+
+    - //No need to write all logic inside run method
+      // we can create our own method to write a logic just call that methods run() methods.
+
+            *) Daemon Threads
+
+        - The Thread which runs in the background is called as Daemon thread. ex.Garbage Collector .
+        - Daemon threads are also called as low priority Threads.
+        - We can make our thread as Daemon using setDaemon()method
+        - When JVM reaches end of main method it will terminate our prog.
+        - if jvm found Daemon Thread running it terminates that daemon Thread
+            and shoutdown thr program.
+        - JVM will not be care about Daemon Thread .
+
+        Thread Priority in Java
+
+        Thread Priority in Java defines the importance level of a thread, which helps the thread
+         scheduler decide the order in which threads should be executed.
+        In Java, there are 3 pre-defined priorities for every thread:
+        public static int MIN_PRIORITY = 1 → Lowest priority
+        public static int NORM_PRIORITY = 5 → Default priority
+        public static int MAX_PRIORITY = 10 → Highest priority
+        These three are the pre-defined priorities, but in Java a thread’s priority can be assigned
+        any value from 1 to 10. But it cannot be less than 1 and cannot be greater than 10.
+
+        sleep() Method in Threads
+        The sleep() method in Java is used to pause the execution of the current thread for a specified amount of time
+         (in milliseconds or nanoseconds).
+        During the sleep period, the thread goes into a Timed Waiting state but does not lose ownership of any monitors (locks).
+        - sleep throws InterruptedException
+        - sleep () does not release the lock.
+
+        * yield() Method in Thread
+        The yield() method in Java is used to temporarily pause the currently executing thread and give a chance for other threads of the same or higher priority to execute.
+        When a thread calls Thread.yield(), it goes back to the Runnable state, so that the thread scheduler can decide which thread to run next.
+        - The thread moves from Running state back to Runnable state after calling yield().
+
+        *join() Method in Threads
+         The join() method in Java is used to pause the execution of the current thread until the thread on which join() is called completes its execution.
+         When a thread calls thread.join(), it waits for the specified thread to finish before continuing its own execution. This ensures sequential execution among threads when needed.
+
+     * Synchronization
+     // Synchronized means -> Thread safe only one Thread can access the obj at a one time.
+     // non-Synchronized mean -> Not Thread safe multiple Threads can access the object at a time
+     //if multiple Threads can access the same obj at a same time then there is a chance
+     // of getting data inconsistency problem.
+     // To avoid data inconsistency problem. we need to use Synchronized concept.
+     // By using synchronization we cnn achieve Thread safety , but it will slow down our execution process.
+
+        # Working of Synchronization:
+        Synchronization uses a lock (monitor) internally.
+        When a thread enters a synchronized method/block, it acquires the lock of the object (or class, for static methods).
+        Other threads that try to access the same synchronized method/block are blocked and must wait.
+        Once the first thread exits, it releases the lock, and one of the waiting threads gets a chance to acquire it and proceed.
+
+        Synchronization method()
+        It ensures that only one thread can access the method at a time for a particular object instance.
+        If another thread tries to call any synchronized method on the same object, it will be blocked until the first thread finishes execution.
+
+        Synchronization block
+        A synchronized block lets you lock only a specific part of code, instead of the whole method.
+        Only one thread at a time can execute the code inside this block for the same lock object.
+        ✔ Better performance  Smaller lock scope ✔ Industry best practice
+
+        * InterThread Communication
+
+
+    * deadLock
+    // deadlock in multiThreading
+    //Thread 1 holds lock1 and waits for lock2
+    //Thread 2 holds lock2 and waits for lock1
+    //Both wait forever → deadlock
+
+    //A deadlock occurs when two or more threads are blocked forever,
+    //each waiting for a resource held by another thread. As a result, none of the threads can proceed.

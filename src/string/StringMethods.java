@@ -80,5 +80,11 @@ public class StringMethods {
     public static void main(String[] args) {
         StringMethods obj=new StringMethods();
         obj.meth1();
+
+        String s="name";
+        int r=Integer.parseInt(s);// String to int
+        String s1=String.valueOf(r); // int to String
+
+
     }
 }
