@@ -3,12 +3,12 @@ package multiThreading.pract;
 public class Join {
 
     public static void main(String[] args) throws InterruptedException{
-        System.out.println("J");
+        System.out.println("S");
         Thread.sleep(1000);
-        System.out.println("A");
+        System.out.println("H");
         Thread.sleep(2000);
-        System.out.println("V");
+        System.out.println("I");
         Thread.sleep(5000,500);
-        System.out.println("A");
+        System.out.println("V");
     }
 }
