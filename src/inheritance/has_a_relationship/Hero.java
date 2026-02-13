@@ -6,7 +6,7 @@ public class Hero {
     String name;
     int age;
     double height;
-    Address add;
+    Address add;    // Hero class Has a reference of a Address class.
     Movies m;
 
     Hero(String name,int age, double height, Address add, Movies m){
@@ -22,7 +22,7 @@ public class Hero {
         System.out.println("Hero age is : "+ age);
         System.out.println("Hero height is : "+ height);
         System.out.println("Hero address is : "+ add.dno +" "+ add.street +" "+ add.state);
-        System.out.println("Hero movies : "+ m.tmov+" " + m.bmov);
+        System.out.println("Hero movies : "+ m.tollywoodmov+" " + m.bollywoodbmov);
     }
 
     public static void main(String[] args) {

@@ -2,10 +2,10 @@ package inheritance.has_a_relationship;
 
 public class Movies {
 
-    int tmov,bmov;
+    int tollywoodmov,bollywoodbmov;
 
-    Movies(int tmov, int bmov){
-        this.tmov=tmov;
-        this.bmov=bmov;
+    Movies(int tollywoodmov, int bollywoodbmov){
+        this.tollywoodmov=tollywoodmov;
+        this.bollywoodbmov=bollywoodbmov;
     }
 }
