@@ -6,6 +6,7 @@ public class ClassA implements Callable {
     @Override
     public Object call() throws Exception {
         System.out.println("Call() method execute.."+ Thread.currentThread().getName());
+        System.out.println(10/0);
         return "Hi";
     }
 
