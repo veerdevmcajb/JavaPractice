@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class MultiDimArray {
     public static void main(String []args){
 
@@ -11,6 +13,10 @@ public class MultiDimArray {
             }
             System.out.println();
         }
+
+        int arr2[]={10,30,50,30,};
+        Arrays.sort(arr2);
+        System.out.println(arr[3]);
     }
 }
 
