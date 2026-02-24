@@ -21,6 +21,9 @@ public class ArrayLiMethods {
         al.remove(2); // remove the data in 2 index
         System.out.println(al);
 
+        al.remove(Integer.valueOf(10));
+        System.out.println("remove: "+al);
+
         al.set(1,"veer"); // set will replace the data on 1 index.
         System.out.println(al);
 
@@ -42,3 +45,39 @@ public class ArrayLiMethods {
 // isEmpty();--> check is empty or not.
 // clear()--> clear the array.
 
+
+
+/*
+* package CollectionFile.ArrayListFile;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Demo {
+
+    public static void main(String[] args) {
+
+        ArrayList al = new ArrayList(Arrays.asList(2,3,4,2,3,2,4,5,7,8));
+
+        System.out.println(al);
+
+
+
+        for(int i =0; i<al.size() ;i++)
+        {
+            for(int j=i+1; j< al.size() ; j++)
+            {
+                if(al.get(i).equals(al.get(j)))
+                {
+                    al.remove(j);
+                    j--;
+
+                }
+            }
+        }
+
+        System.out.println(al);
+
+    }
+}
+* */

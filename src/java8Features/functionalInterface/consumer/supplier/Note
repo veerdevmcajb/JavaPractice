@@ -1,0 +1,178 @@
+* Interface
+- if we add new methods in interface then Car ,Bike and Bus will fail at compile time.
+    - To Overcome above problem we will use default and static methods.
+
+    1) Interface can have concrete methods .
+    2) Interface concrete methods should be default or static.
+    3) Interface Default methods we can override in implementation classes.
+    4) Interface static methods we can't override in implementation classes.
+    5) we can write multiple default & static methods in interface.
+    6) Default & static methods introduced to provide backward compatability.
+    ex. forEach() method added in java.util.iterable interface as default method() in 1.8v
+    - if we want implementation classes to allow overriding concept
+      of method then we can use default method .
+
+
+* FUnctional Interface
+
+/*  From 1.8v onwords Java is called as Functional Programming ->
+*   - in oops language Classes and objects are main entities.
+*   - We need to write methods inside the class only.
+* - Functional programming means everything will be represented in the frm of functions .
+*       functions can be exist outside of the class.Functions can be store in to reference  variable.
+*       A functions can be pass as a parameter to other method.
+*
+
+*   - Lambda Expression introduced in java to enable Function Programming
+
+*       ===============================
+*           - What is Lambda Expression
+*       ==============================
+*       -Lambda is a anonmous function without name without modifier and without return type.
+*       -Lambda is used to reduce no of lines in our program.
+*       - Lambda is a nameless functions
+        - Hpw to call the lambda Expression --> Using Functional Interface.
+
+*       ex.
+*       public void m1(){
+*          sout("HI");
+*       }
+*
+*       ()->sout("HI");
+*
+*       =========================
+*           Functional Interface
+*       =========================
+*   * functional Interface --> the functional Interface which contain only one abstract method.
+*       -> Functional Interfaces are used to invoke Lambda Expressions
+*           Runnable--> run();
+*           Callable--> call();
+*           Comparable--> compareTo();
+*
+*       - To represent a Functional Interface we use @FunctionalInterface annotation.
+*       @FunctionalInterface
+*       public Interface MyInterface{
+*           public void m1();
+*       }
+*       note:-> when we write a @FUnctionalInterface annotation then compiler will check oue Interface is containing only one abstract method or not.
+*
+* */
+@FunctionalInterface
+interface MyInterface{
+    public void m2();
+}
+public class ClassA {
+    public static void main(String[] args) {
+    MyInterface mi=()-> System.out.println("Lambda Expression");
+    mi.m2();
+    }
+}
+
+
+
+
+
+
+* Predicate
+    -  Predicate is a functional Interface is used to check condition and return true or false
+          Predicate Interface is having only one abstract method that is test();
+
+ //Predicate Joining--> To Combine Multiple Predicates we will use Predicate Joining.
+        //  and() method , or() method
+        Predicate<Employee>p=p1.or(p2).or(p3);
+        //Predicate<Employee>p=p1.and(p2).and(p3);
+
+
+
+============================
+Supplier Functional Interface
+=============================
+
+-> Supplier is a predefine FUnctional Interface introduced in java 1.8v.
+-> it contains only abstract method is get()method
+-> Supplier interface will not take any input,it will only returns the value.
+
+ex.
+    public class SupplierDemo {
+        public static void main(String[] args) {
+
+           Supplier <String> s= ()->{
+                String otp="";
+                for(int i=1;i<=5;i++){
+                    otp=otp+(int) (Math.random()*10);
+                }
+                return otp;
+            };
+
+            System.out.println(s.get());
+        }
+    }
+
+
+
+
+
+======================
+Consumer
+=====================
+
+- Consumer is predefine FunctionalInterface.
+- it contains one abstract method i.e accept (T t)
+- Consumer will accept input but it won't return anything
+
+note: in java 8 forEach () method get introduced . forEach(Consumer consumer) will take consumer as parameter.
+
+
+
+Predicate-->takes input--> Condition Check--> returns True or False.
+Supplier --> Will not take any input --> return output
+Consumer--> will take input--> will not return anything .
+Function --> Will take input--> will return output.
+
+=========================
+FUnction
+==========================
+- Function is a pre define functional Interface .
+- Function interface having one abstract method i.e apply(T r).
+        interface Function<R,T>{
+            R.apply(T t);
+        }
+- It Takes input and it returns output.
+
+
+=========================
+forEach() method in java
+=========================
+
+- forEach (Consumer c) method introduced in java 1.8v.
+- forEach() method added in Iterable Interface.
+- forEach() method is a default method (it is having body).
+- This method is used to access each elements of the collection.
+- why this is default method..?
+
+
+    * StringJoiner
+    StringJoiner class introduced in java 1,8v;
+   - It is used to join more than one String with specific delimiter.
+   - we can concat prefix and suffix while joining strings using StringJoiner.
+        ex.1
+          StringJoiner sj=new StringJoiner("-");
+                sj.add("Shiv");
+                sj.add("Madhavrao");
+                sj.add("Chandankar");
+                System.out.println(sj);
+
+        ex.2
+             StringJoiner sj2=new StringJoiner("-","(",")");
+                    sj2.add("veer");
+                    sj2.add("Dev");
+
+
+    * Optional Class
+    - OPtional class introdused in java 1.8v
+    - Optional class is used to avoid NullPointer Exceptions in the program.
+
+    Q What is NullPointerException(NPE)?
+        ans ) When we perform some operations on null value then we will get NullPointerException
+                String s=null;
+                s.length(); //NPE

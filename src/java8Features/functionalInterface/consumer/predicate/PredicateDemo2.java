@@ -1,4 +1,4 @@
-package java8Features.lambdaEx;
+package java8Features.functionalInterface.consumer.predicate;
 
 import java.util.function.Predicate;
 
