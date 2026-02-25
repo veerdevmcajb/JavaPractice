@@ -1,7 +1,5 @@
-package java8Features;
+package collections.Sorting.comparator;
 
-
-import garbageCollector.Emp;
 
 import java.util.*;
 

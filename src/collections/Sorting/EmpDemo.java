@@ -16,8 +16,8 @@ public class EmpDemo {
         Collections.sort(emps, new Comparator<Employee>() {
             @Override
             public int compare(Employee e1, Employee e2) {
-                return (int) ( e2.salary-e1.salary ); // desending ordr
-               // return (int) ( e1.salary - e2.salary ); // Assending ordr
+               // return (int) ( e2.salary-e1.salary ); // desending ordr
+                return (int) ( e1.salary - e2.salary ); // Assending ordr
             }
         });
 
