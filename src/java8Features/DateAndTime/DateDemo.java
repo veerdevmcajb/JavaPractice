@@ -13,6 +13,18 @@ import java.util.Date;
     - For Normal Date related Operations then we will use java.util.Date class.
             Date d=new Date();
             sout(d);
+
+    Note : When we create a Date obj for Date class we will get date and Time
+
+    -> If we want to get only date or Time then we need to format it using simpleDateFormat class.
+
+    To overcome the above problems of java.util.Date  class java 1.8v introduced Date API Changes.
+    - New classes got introduced
+        1) java.time.LocalDate  ( it will deal with only date)
+        2) java.time.LocalTime  ( it will deal with only time)
+        3) java.time.LocalDateTime (it will deal with both date & time).
+        4) java.time.Period (it will deal with difference between dates)
+
 *
 * */
 public class DateDemo {

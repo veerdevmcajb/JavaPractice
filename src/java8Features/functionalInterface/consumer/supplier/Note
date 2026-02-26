@@ -12,6 +12,7 @@
     - if we want implementation classes to allow overriding concept
       of method then we can use default method .
 
+ ==========================================================================================================
 
 * FUnctional Interface
 
@@ -22,6 +23,7 @@
 *       functions can be exist outside of the class.Functions can be store in to reference  variable.
 *       A functions can be pass as a parameter to other method.
 *
+ ==========================================================================================================
 
 *   - Lambda Expression introduced in java to enable Function Programming
 
@@ -39,7 +41,8 @@
 *       }
 *
 *       ()->sout("HI");
-*
+* ==========================================================================================================
+
 *       =========================
 *           Functional Interface
 *       =========================
@@ -139,6 +142,7 @@ FUnction
         }
 - It Takes input and it returns output.
 
+ ==========================================================================================================
 
 =========================
 forEach() method in java
@@ -150,6 +154,7 @@ forEach() method in java
 - This method is used to access each elements of the collection.
 - why this is default method..?
 
+ ==========================================================================================================
 
     * StringJoiner
     StringJoiner class introduced in java 1,8v;
@@ -167,6 +172,7 @@ forEach() method in java
                     sj2.add("veer");
                     sj2.add("Dev");
 
+ ==========================================================================================================
 
     * Optional Class
     - OPtional class introdused in java 1.8v
@@ -176,3 +182,40 @@ forEach() method in java
         ans ) When we perform some operations on null value then we will get NullPointerException
                 String s=null;
                 s.length(); //NPE
+
+ ==========================================================================================================
+
+  Date & Time API Changes
+      - In java we have to 2 classes to represent Date
+          1) java.util.Date;
+          2) java.sql.Date;
+      Note: When we are performing database operations then we will use java.sql.Date class
+
+      - For Normal Date related Operations then we will use java.util.Date class.
+              Date d=new Date();
+              sout(d);
+
+      Note : When we create a Date obj for Date class we will get date and Time
+
+      -> If we want to get only date or Time then we need to format it using simpleDateFormat class.
+
+      To overcome the above problems of java.util.Date  class java 1.8v introduced Date API Changes.
+      - New classes got introduced
+          1) java.time.LocalDate  ( it will deal with only date)
+          2) java.time.LocalTime  ( it will deal with only time)
+          3) java.time.LocalDateTime (it will deal with both date & time).
+          4) java.time.Period (it will deal with difference between dates)
+
+
+ ==========================================================================================================
+
+    Stream API
+
+    -Collections is used to Store the Data & Stream is used to Process the Data.
+    - by using Stream we can perform the operations on data.
+
+
+
+    # flatMap()
+
+    # Slicing Operations with Streams

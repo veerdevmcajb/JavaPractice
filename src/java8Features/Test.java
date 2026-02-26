@@ -12,8 +12,9 @@ class Student implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-       Student student=(Student)o;
-       return -this.sname.compareTo(student.sname);
+        Student student=(Student) o;
+       //return this.sname.compareTo(student.sname); // sorting Ascending by names
+       return -this.sname.compareTo(student.sname); // sorting Descending by names
     }
 
 //    @Override
