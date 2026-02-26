@@ -34,9 +34,9 @@ class Car{
 
     public static void main(String[] args) {
         Car c=new Car();
-        c.start();
-        c.start();
-        Vehical.run();
+        c.start();  //Car is Started...
+        c.start();  //Car is Started...
+        Vehical.run();  //car is Running
     }
 }
 
