@@ -1,0 +1,9 @@
+SingletonClass
+    - SingletonClass means we can create only one object for one class.
+    - one class -----> one object.
+
+    Rules..
+    1) Declare a private static non-primitive ref variable.
+    2) Declare a private constructor
+    3) Have a public static helper method to create a single object.
+
