@@ -14,6 +14,8 @@ import java.util.Map;
     - Default capacity is 16.
     - Load Factor is 0.75
     - It is Not synchronized.
+    underline data structure of HashMap is Hash Table .
+
 *
 * */
 

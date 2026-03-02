@@ -33,18 +33,19 @@ public class ClassA {
         PriorityQueue pq=new PriorityQueue();
         pq.add(45);
         pq.add(56);
-       // pq.offer("java");
+        //pq.offer("java");
+        pq.offer(50);
        // pq.offer(null);
         pq.add(41);
         pq.add(5);
         pq.add(1);
         pq.add(56);
         System.out.println(pq);
-        System.out.println(pq.poll());
+        System.out.println(pq.poll()); // 1st element
         System.out.println(pq);
-        System.out.println(pq.remove());
+        System.out.println(pq.remove());//5
         System.out.println(pq);
-        System.out.println(pq.peek());
+        System.out.println(pq.peek());//51
         System.out.println(pq);
         pq.clear();
         System.out.println(pq);
