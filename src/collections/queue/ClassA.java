@@ -3,9 +3,10 @@ package collections.queue;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
-/* - in prority queue always the first element will be smaller element
+/* - in priority queue always the first element will be smaller element
    - Insertion order is not maintained.
-   - It allowes only Homogeneous data
+   - It is following sorting order.
+   - It allow only Homogeneous data
    - Duplicates are allowed.
    - Null is not allowed.
    - default capacity is 11.
