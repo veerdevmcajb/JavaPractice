@@ -13,7 +13,7 @@ import java.util.Iterator;
     - It is not synchronized by default.
  * */
 
-public class ClassA {
+public class  ClassA {
 
     void meth1(){
        HashSet hs=new HashSet();
