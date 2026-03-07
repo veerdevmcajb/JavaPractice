@@ -27,5 +27,8 @@ public class Demo1 {
         System.out.println(map.lastEntry());    //107=Natha
 
         System.out.println(map.get(101));   //Shiv
+
+        TreeMap m=new TreeMap();
+
     }
 }
