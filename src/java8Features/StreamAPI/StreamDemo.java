@@ -1,6 +1,8 @@
 package java8Features.StreamAPI;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamDemo {
@@ -21,5 +23,12 @@ public class StreamDemo {
 
         System.out.println(stream2);
         System.out.println(stream1);
+
+        System.out.println("======================================");
+      List<Integer> list =  List.of(10,20,5,8,7,20);
+      List<Integer> even=list.stream().filter(e->e%2==0).collect(Collectors.toList());
+        System.out.println(even);
+
+        list.stream().filter(e->e%2==0).forEach(s-> System.out.println(s));
     }
 }

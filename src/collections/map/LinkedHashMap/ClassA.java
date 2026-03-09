@@ -2,12 +2,10 @@ package collections.map.LinkedHashMap;
 
 import collections.list.arraylist.ArraListEx6;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 // insertion order in maintained
+// Duplicate key is not allow  but duplicate value is allowed
 public class ClassA {
     public static void main(String[] args) {
 

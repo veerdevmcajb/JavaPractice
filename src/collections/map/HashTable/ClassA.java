@@ -28,6 +28,7 @@ public class ClassA {
         hasht.put(103,3000);
         System.out.println(hasht);
 
+
     }
 
     public static void main(String[] args) {
