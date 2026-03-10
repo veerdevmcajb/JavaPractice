@@ -9,4 +9,12 @@ public class Employee {
         Id = id;
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "Id=" + Id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

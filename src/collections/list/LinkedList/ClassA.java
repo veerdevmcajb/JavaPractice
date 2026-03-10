@@ -9,6 +9,10 @@ import java.util.ListIterator;
     - insertion order is maintained.
     - default capicity is 0
     - It is not synchronized.
+    - 2 constructors are there in linkedList
+        1) LinkedList();
+        2) LinkedList(Collection c);
+
 * */
 
 public class ClassA {
@@ -27,6 +31,8 @@ public class ClassA {
         l.add(45);
         l.add(01);
         System.out.println("LinkedList : "+ l);
+
+        System.out.println(l.get(4));
 
         System.out.println("-------ListIterator--------");
         ListIterator li=l.listIterator();

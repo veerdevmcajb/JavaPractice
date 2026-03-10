@@ -2,6 +2,7 @@ package collections.list.LinkedList;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class Traverse {
 
@@ -22,5 +23,15 @@ public class Traverse {
         while (i.hasNext()){
             System.out.println(i.next());
         }
+
+        System.out.println("==========Using ListIterator==============");
+
+       Iterator it=list.iterator();
+       while (it.hasNext()){
+           System.out.println(it.next());
+       }
+
+        System.out.println("===========Using forEach() method ===========");
+       list.forEach(s-> System.out.println(s));
     }
 }

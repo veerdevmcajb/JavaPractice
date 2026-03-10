@@ -14,6 +14,8 @@ public class ArraListEx6 {
         a1.add(e1);
         a1.add(e2);
 
+        System.out.println(a1.get(1));
+
 
         ArrayList<Employee> a2=new ArrayList<Employee>();
         a2.addAll(a1);

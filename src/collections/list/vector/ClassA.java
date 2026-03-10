@@ -9,6 +9,14 @@ import java.util.Vector;
     null is allowed , duplicates are allowed.
     vector is Thread safe and synchronzed.
 
+   - in search & remove operations internally equal() method is called.
+   - implemented data Structure is growable array.
+   - we have 4 constructors
+   1) Vector();
+   2) vector(Collection c);
+   3) Vector (int capacity) ;
+   4) Vector (int capacity, int incrCapacity ) ;
+
     Enumeration Interface is used for legacy classes.
     - Enumeration have two methods -> 1) hasMorElements() . 2) nextElement() .
 
