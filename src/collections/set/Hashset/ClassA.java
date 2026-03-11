@@ -11,6 +11,18 @@ import java.util.Iterator;
         if you are adding one more elements the size will be increase by double . means size is 32.
     - Heterogeneous data is allowed.
     - It is not synchronized by default.
+
+    - A HashSet stores unique elements and internally uses a HashMap.
+        hs.add("Cat");
+        step 1) Calculate HashCode
+             2) FInd Bucket
+             3) Check collision
+             4) Store element in bucket
+
+    - HashSet checks duplicates using:
+            hashCode()
+            equals()
+
  * */
 
 public class  ClassA {

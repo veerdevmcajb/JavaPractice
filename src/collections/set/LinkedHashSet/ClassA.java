@@ -7,7 +7,15 @@ import java.util.LinkedHashSet;
 // There is only one diff between Hashset and LinkedHashSet is
 // LinkedHasSet is allowed insertion order.
 // Hashset does not allowed insertion order.
+// underline data structure is LinkedHashMap
+// duplicates are not allow
+// Null is allowed.
 
+ //   when adding element
+//  1) calculate HashCode
+//  2) find bucket
+//  3) insert into Hashtable
+//  4) Link in double linked list
 public class ClassA {
     void meth1(){
         System.out.println("LinkedHashSet");

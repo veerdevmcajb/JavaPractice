@@ -6,3 +6,25 @@ Reflection API
     syntax:
       Class clz=Class.forName("fullycolifiedclassname");
       Field[] fields =clz.getDeclaredFields();
+
+
+      Q What is API ..?
+      set of predefine classes. to perform a one operations.
+
+    - Reflection API classes are placed in three packages.
+        1) java.lang;
+        2) java.lang.reflect
+        3) java.lang.annotation
+
+    * methods for loading and instantiation a giving class dynamically.
+        1) public static ClassForName(String className){
+                throw class not found
+            }
+
+        2) for instantiation the loaded class(){
+                throw instantiationException
+        }
+
+        * reading className ---> String className = sc.nextLine();
+        * loading class bytc---> Class cls = Class.forName(clsname);
+        * instantiation class--> Object obj = cls.newInstance();

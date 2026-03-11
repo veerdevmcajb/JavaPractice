@@ -30,5 +30,20 @@ public class Program1 {
         Arrays.fill(fruits,"KIWI"); // fill() fill the array with a specified value.
 
         System.out.println(Arrays.toString(fruits));
+
+
+        System.out.println("===========copy array into new array ");
+        int arr5[]={1,2,3,4,5};
+
+        int arr6[]=new int[10];
+
+        int j=0;
+        for(int i=0; i<arr5.length; i++){
+            arr6[j++]= arr5[i];
+        }
+        ;
+        System.out.println(Arrays.toString(arr6));
+        arr6[j++]=10;
+        System.out.println(Arrays.toString(arr6));
     }
 }

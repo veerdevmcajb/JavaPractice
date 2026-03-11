@@ -14,7 +14,19 @@ import java.util.TreeSet;
     - Default capacity is 16 load factor is 0.75.
     - Treeset is available from java 1.2
     - It is not Synchronized.
-* */
+
+            50
+       /  \
+     10    70
+       \
+        30
+
+  - When add() is called.
+  - 1) compare Element
+  - 2) Find Correct position
+  - 3) Insert node
+  - 4) Balance tree using Red Black rules
+  * */
 
 public class ClassA {
     void meth1(){
