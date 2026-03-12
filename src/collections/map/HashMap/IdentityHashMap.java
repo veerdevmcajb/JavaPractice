@@ -30,5 +30,16 @@ public class IdentityHashMap {
 
         System.out.println(map);
 
+        System.out.println("==========");
+
+        System.out.println("a".hashCode());
+        System.out.println("a".hashCode() % 16);
+
+        System.out.println("5.6".hashCode()%16);
+        System.out.println("6.5".hashCode() % 16);
+
+        System.out.println(new String("a").hashCode() % 16);
+
+
     }
 }

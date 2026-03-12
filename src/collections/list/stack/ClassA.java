@@ -31,6 +31,8 @@ public class ClassA {
         s.push(90);
         s.push(null);
 
+        System.out.println(s.get(5));
+
         System.out.println("Capacity is " + s.capacity());
         System.out.println(s);
 

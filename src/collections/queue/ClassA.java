@@ -42,11 +42,11 @@ public class ClassA {
         pq.add(1);
         pq.add(56);
         System.out.println(pq);
-        System.out.println(pq.poll()); // 1st element
+        System.out.println(pq.poll()); // 1st element return & remove
         System.out.println(pq);
-        System.out.println(pq.remove());//5
+        System.out.println(pq.remove());//5 (1st element remove [FIFO] )
         System.out.println(pq);
-        System.out.println(pq.peek());//51
+        System.out.println(pq.peek());//41 return but not remove
         System.out.println(pq);
         pq.clear();
         System.out.println(pq);

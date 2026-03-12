@@ -40,6 +40,8 @@ public class  ClassA {
        hs.add(10);
        hs.add(null);
        hs.add(110);
+
+
         System.out.println("Hashset : "+ hs);
         Iterator i=hs.iterator();
         while (i.hasNext()){
