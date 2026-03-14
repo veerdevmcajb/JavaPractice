@@ -16,5 +16,10 @@ public class ConsumerDemo {
 
        numbs.forEach((i-> System.out.println(i)));
 
+
     }
 }
+
+//forEach --> consumer -- have a accept(); method
+// collect --> supplier -->
+//        numbs.stream().findFirst().orElseGet()

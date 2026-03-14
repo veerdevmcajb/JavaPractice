@@ -10,5 +10,6 @@ public class PredicateDemo {
         System.out.println(p.test(5));
         System.out.println(p.test(10));
         System.out.println(p.test(15));
+
     }
 }

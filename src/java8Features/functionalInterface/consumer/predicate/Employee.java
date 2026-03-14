@@ -2,6 +2,7 @@ package java8Features.functionalInterface.consumer.predicate;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Employee {
@@ -24,7 +25,11 @@ class PredicateJoinDemo{
         Employee e4=new Employee("Shyam","Hyd","Testing");
         Employee e5=new Employee("Ram","Pune","Networking");
 
+
+
         List<Employee> emps= Arrays.asList(e1,e2,e3,e4,e5);
+
+       // emps.stream().map();
 
         Predicate<Employee> p1=(e)->e.location.equals("Hyd");
         Predicate<Employee> p2=(e)->e.dept.equals("DB");
@@ -40,5 +45,10 @@ class PredicateJoinDemo{
                 System.out.println(e.name+" "+ e.dept);
             }
         }
+
+
+        // function interface
+        // Function<Employee, String > func=e-> e.getEmployeeName();
     }
 }
+
