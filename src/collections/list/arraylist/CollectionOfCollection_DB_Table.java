@@ -7,7 +7,7 @@ public class CollectionOfCollection_DB_Table {
 
     public static void main(String[] args) {
 
-        ArrayList<List<Object>> table =new ArrayList<>();
+        ArrayList <List<Object>> table =new ArrayList<>();
 
         List<Object> columnNames = List.of("V1","V2","V3","V4","V5");
         List<Object> row1 = List.of(1,2,3,4,5);

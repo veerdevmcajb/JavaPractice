@@ -16,5 +16,15 @@ public class Duplicates_Remove {
         numbers.stream().sorted().forEach(System.out::println);
 
         //numbers.stream().peek(e->e%2==0).forEach(System.out::println);
+
+
+        System.out.println("===================spliterator==================");
+
+        List<String> names = Arrays.asList("sachin", "sehwag", "dhoni");
+
+        Spliterator<String> spliterator = names.stream().spliterator();
+
+        spliterator.forEachRemaining(n -> System.out.println(n));
+
     }
 }

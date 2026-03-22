@@ -2,6 +2,7 @@ package java8Features.DateAndTime;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /*  Date & Time API Changes
@@ -49,5 +50,8 @@ public class DateDemo {
         SimpleDateFormat sdf3=new SimpleDateFormat("yyyy-MM-dd");
         Date parsedDate=sdf3.parse("2026-02-24");
         System.out.println(parsedDate);
+
+        DateTimeFormatter format=DateTimeFormatter.ofPattern("dd-mm-yyyy");
+        //String formatDate=d.
     }
 }

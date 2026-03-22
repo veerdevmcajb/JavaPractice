@@ -1,10 +1,8 @@
 package java8Features.DateAndTime;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Period;
+import java.time.*;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class NewDateDemo {
     public static void main(String[] args) {
@@ -46,5 +44,22 @@ public class NewDateDemo {
         Period between = Period.between(LocalDate.parse("1998-05-10"),LocalDate.now());
         System.out.println(between);
 
+        // TimeZone
+
+        ZonedDateTime zonedTime = ZonedDateTime.now();
+        System.out.println("ZonedTime : "+ zonedTime);
+
+        ZonedDateTime NYC_Time = ZonedDateTime.now(ZoneId.of("America/New_York"));
+        System.out.println("NYC_Time "+NYC_Time);
+
+        ZonedDateTime LA_Time = ZonedDateTime.now(ZoneId.of("America/Los_Angeles"));
+        System.out.println("LA_Time "+ LA_Time);
+
+        ZonedDateTime utc = ZonedDateTime.now(ZoneId.of("UTC"));
+        System.out.println(utc);
+
+        // Instant
+        Instant instant = Instant.now();
+        System.out.println("Instant  "+instant);
     }
 }
