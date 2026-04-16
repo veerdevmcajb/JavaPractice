@@ -12,7 +12,7 @@ package multiThreading;
         and shoutdown thr program.
     - JVM will not be care about Daemon Thread .
 * */
-public class DaemonEx implements Runnable{
+public class DaemonEx implements Runnable {
     @Override
     public void run() {
         if(Thread.currentThread().isDaemon()){
