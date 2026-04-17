@@ -42,7 +42,7 @@ ________________________________________________________________________________
 
         | Feature     | HashSet     | TreeSet     | LinkedHashSet |
         | ----------- | ----------- | ----------- | ------------- |
-        | Order       | No          | Sorted      | Insertion     |
+        | Order       | No          | Sorted      | Insertion      |
         | Performance | Fast        | Slower      | Medium        |
         | Null        | One allowed | Not allowed | One allowed   |
 
